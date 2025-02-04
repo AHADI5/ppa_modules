@@ -1,6 +1,15 @@
 {
     'name': 'Project Purchase Approval',
-    'depends': ['base' , 'project' , 'purchase'],
+    'depends': ['base' , 'project' , 'purchase' , 'hr'],
     'author': 'Glo',
-    'data': []
+    'data': [
+        # Security data
+
+        'security/ir.model.access.csv',
+        'security/res_groups.xml',
+
+        #Views data
+        'views/ppa_project_view.xml',
+    ] ,
+
 }

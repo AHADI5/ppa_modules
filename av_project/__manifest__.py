@@ -1,6 +1,6 @@
 {
     'name': 'Project Purchase Approval',
-    'depends': ['base' , 'project' , 'purchase' , 'hr'],
+    'depends': ['base' , 'project' , 'hr'],
     'author': 'Glo',
     'data': [
         # Security data
@@ -9,7 +9,8 @@
         'security/res_groups.xml',
 
         #Views data
-        'views/ppa_project_view.xml',
+        'views/project_view.xml',
+        'views/department_view.xml'
     ] ,
 
 }

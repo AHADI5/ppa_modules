@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Define a new module category for PPA Groups -->
+        <record id="module_category_ppa" model="ir.module.category">
+            <field name="name">PPA GROUPS</field>
+        </record>
+
+        <!-- Define a group for HODs (Head of Department) -->
+        <record id="hod_user_group" model="res.groups">
+            <field name="name">HOD GROUP</field>
+            <field name="category_id" ref="module_category_ppa" />
+            <!-- The Head of the department, who approves RFQs -->
+        </record>
+
+        <!-- Define a group for CPs (Project Purchases Submissions) -->
+        <record id="cp_user_group" model="res.groups">
+            <field name="name">CP GROUP</field>
+            <field name="category_id" ref="module_category_ppa" />
+            <!-- The one in charge of Project Purchase Submissions -->
+        </record>
+    </data>
+</odoo>

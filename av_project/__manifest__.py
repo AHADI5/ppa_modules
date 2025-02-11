@@ -1,5 +1,5 @@
 {
-    'name': 'Project Purchase Approval',
+    'name': 'av project',
     'depends': ['base' , 'project' , 'hr'],
     'author': 'Glo',
     'data': [
